@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  width: 300px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.App input,
+.App button {
+  padding: .2rem .5rem;
+}
+
+.card_body_stars {
+  list-style-type: none;
+  display: flex;
+  padding: 1rem 0;
+}
