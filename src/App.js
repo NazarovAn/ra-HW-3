@@ -1,15 +1,22 @@
 import './App.css'
-import Stars from './Stars'
-import Input from './Input'
-import { useState } from 'react'
+import { BrowserRouter as Router , Route } from 'react-router-dom';
+import First from './HW-3.1/First'
+import Second from './HW-3.2/Second'
+import Third from './HW-3.3/Third';
+import Navigation from './Navigation'
 
 function App() {
-  const [count, setCount] = useState(1);
   return (
-    <div className="App">
-      <Input onSubmit={setCount} />
-      <Stars count={ count } />
-    </div>
+    <Router>
+      <div className="App">
+        <Navigation />
+        <div className="task">
+          <Route path="/first" component={ First } />
+          <Route path="/second" component={ Second } />
+          <Route path="/third" component={ Third } />
+        </div>
+      </div>
+    </Router>
   );
 }
 

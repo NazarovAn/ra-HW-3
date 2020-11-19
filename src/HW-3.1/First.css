@@ -1,0 +1,16 @@
+.first__wrapper {
+  width: 300px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.first__wrapper input,
+.first__wrapper button {
+  padding: .2rem .5rem;
+}
+
+.card_body_stars {
+  list-style-type: none;
+  display: flex;
+  padding: 1rem 0;
+}

@@ -1,21 +1,43 @@
-* {
-  padding: 0;
-  margin: 0;
-}
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 .App {
-  width: 300px;
-  margin: auto;
-  padding-top: 50px;
-}
-
-.App input,
-.App button {
-  padding: .2rem .5rem;
-}
-
-.card_body_stars {
-  list-style-type: none;
   display: flex;
-  padding: 1rem 0;
+}
+
+.navigation {
+  background-color: rgb(240, 240, 240);
+  height: 100vh;
+  position: relative;
+  min-width: 52px;
+}
+
+.task {
+  flex-grow: 1;
+  flex-basis: 80%;
+}
+
+.nav_icon {
+  padding: .5rem;
+  font-size: 36px;
+  position: absolute;
+  right: 0;
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.navigation__list a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .5rem 1rem;
+}
+
+.hidden {
+  display: none;
 }
