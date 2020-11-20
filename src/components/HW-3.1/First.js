@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import Input from './Input'
-import Stars from './Stars'
+import Input from './components/Input'
+import Stars from './components/Stars'
 import './First.css'
 
 export default function First() {

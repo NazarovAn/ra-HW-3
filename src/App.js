@@ -1,9 +1,9 @@
 import './App.css'
 import { BrowserRouter as Router , Route } from 'react-router-dom';
-import First from './HW-3.1/First'
-import Second from './HW-3.2/Second'
-import Third from './HW-3.3/Third';
-import Navigation from './Navigation'
+import First from './components/HW-3.1/First'
+import Second from './components/HW-3.2/Second'
+import Third from './components/HW-3.3/Third'
+import Navigation from './components/Navigation'
 
 function App() {
   return (

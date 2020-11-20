@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import './Navigation.css'
 
 export default function Navigation() {
   const [visibility, setVisibility] = useState(true);
@@ -11,9 +12,9 @@ export default function Navigation() {
         { visibility? 'navigate_before' : 'navigate_next' }
       </i>
       <div className={ `navigation__list ${ visibility ? '' : 'hidden' }` }>
-        <NavLink to="/first" activeStyle={ activeStyle }>Stars Homework</NavLink>
-        <NavLink to="/second" activeStyle={ activeStyle }>Second</NavLink>
-        <NavLink to="/third" activeStyle={ activeStyle }>Third</NavLink>
+        <NavLink to="/first" activeStyle={ activeStyle }>Рейтинг фильмов</NavLink>
+        <NavLink to="/second" activeStyle={ activeStyle }>Список предложений</NavLink>
+        <NavLink to="/third" activeStyle={ activeStyle }>История сообщений в чате</NavLink>
       </div>
     </div>
   )
