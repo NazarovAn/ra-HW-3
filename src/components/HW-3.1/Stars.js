@@ -4,10 +4,9 @@ import PropTypes from 'prop-types'
 import Star from './Star'
 
 function Stars(props) {
-  
-  function getStars(count) {
+  const getStars = (count) => {
     if (Number.isInteger(count) && count > 0 && count < 6) {
-      return new Array(count).fill('').map(() => <li key={ shortid.generate() }><Star /></li>)
+      return new Array(count).fill('').map(() => <Star key={ shortid.generate() }/>)
     }
     return null
   }
@@ -21,10 +20,6 @@ function Stars(props) {
 
 Stars.propTypes = {
   count: PropTypes.number.isRequired,
-}
-
-Stars.defaultProps = {
-  count: 1,
 }
 
 export default Stars
