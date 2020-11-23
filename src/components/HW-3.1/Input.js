@@ -10,9 +10,9 @@ export default function Input(props) {
   }
 
   return (
-    <form onSubmit={ submitHandler }>
-      <input value={ value } onChange={ (ev) => setValue(ev.currentTarget.value) } />
-      <button type="submit">Submit</button>
+    <form onSubmit={ submitHandler } className="fw__form">
+      <input value={ value } onChange={ (ev) => setValue(ev.currentTarget.value) } className="fw__input" />
+      <button type="submit" className="fw__button">Submit</button>
     </form>
   )
 }

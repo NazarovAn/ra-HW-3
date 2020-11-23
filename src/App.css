@@ -2,11 +2,11 @@
 
 .App {
   display: flex;
+  min-height: 100vh;
 }
 
 .navigation {
   background-color: rgb(240, 240, 240);
-  height: 100vh;
   position: relative;
   min-width: 52px;
   max-width: 200px;
