@@ -1,13 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
-import Input from './components/Input'
-import Stars from './components/Stars'
-import './First.css'
+import Input from './Input'
+import Stars from './Stars'
+import './FirstHW.css'
 
-export default function First() {
+export default function FirstHW() {
   const [count, setCount] = useState(1);
   return (
-    <div className="first__wrapper">
+    <div className="first__hw">
       <Input onSubmit={ setCount } />
       <Stars count={ count } />
     </div>

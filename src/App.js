@@ -1,8 +1,8 @@
 import './App.css'
 import { BrowserRouter as Router , Route } from 'react-router-dom';
-import First from './components/HW-3.1/First'
-import Second from './components/HW-3.2/Second'
-import Third from './components/HW-3.3/Third'
+import FirstHW from './components/HW-3.1/FirstHW'
+import SecondHW from './components/HW-3.2/SecondHW'
+import ThirdHW from './components/HW-3.3/ThirdHW'
 import Navigation from './components/Navigation'
 
 function App() {
@@ -11,9 +11,9 @@ function App() {
       <div className="App">
         <Navigation />
         <div className="task">
-          <Route path="/first" component={ First } />
-          <Route path="/second" component={ Second } />
-          <Route path="/third" component={ Third } />
+          <Route path="/first" component={ FirstHW } />
+          <Route path="/second" component={ SecondHW } />
+          <Route path="/third" component={ ThirdHW } />
         </div>
       </div>
     </Router>
