@@ -8,12 +8,9 @@ export default function Listing(props) {
       { items.map((item) =>
         item.state === 'active' ? 
           <Item 
-            imageData={{
-              itemUrl: item.url, 
-              imageUrl: item.MainImage.url_570xN,
-              imageId: item.MainImage.listing_image_id,
-            }}
-            itemDetales={{
+            data={{
+              url: item.url, 
+              image: item.MainImage,
               title: item.title,
               currency: item.currency_code ,
               price: item.price,

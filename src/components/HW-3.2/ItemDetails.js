@@ -1,35 +1,19 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function ItemDetails(props) {
-  function checkTitle(title) {
-    return title.length > 50 ? `${ title.slice(0,50) }...` : title
-  }
-  
-  function checkPrice(price, currency) {
-    switch (currency) {
-      case 'USD':
-        return `$${ price }`
-      case 'EUR':
-        return `€${ price }`
-      default:
-        return `${ price } ${ currency }`
-    }
-  }
-
-  function checkQuantity(quantity) {
-    if (quantity < 11) {
-      return 'level-low'
-    } if (quantity < 21) {
-      return 'level-medium'
-    }
-    return 'level-high'
-  }
-
   return (
     <div className="item-details">
-      <p className="item-title">{ checkTitle(props.data.title) }</p>
-      <p className="item-price">{ checkPrice(props.data.currency, props.data.price) }</p>
-      <p className={ `item-quantity ${ checkQuantity(props.data.quantity) }`}>{ props.data.quantity } left</p>
+      <p className="item-title">{ props.title }</p>
+      <p className="item-price">{ props.price }</p>
+      <p className={ `item-quantity ${ props.level }`}>{ props.quantity } left</p>
     </div>
   )
+}
+
+ItemDetails.propTypes = {
+  title: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  level: PropTypes.string.isRequired,
+  quantity: PropTypes.number.isRequired,
 }
